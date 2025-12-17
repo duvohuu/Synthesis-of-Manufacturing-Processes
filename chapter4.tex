@@ -1,1 +1,357 @@
 \chapter{GIA CÔNG CẮT GỌT KIM LOẠI}
+    \section{Tổng quan về công nghệ gia công cắt gọt}
+        \hspace*{0.6cm}Gia công cắt gọt (Machining) là một nhóm các quá trình tạo hình bằng cách \textbf{loại bỏ vật liệu} từ phôi ban đầu để thu được hình dạng, kích thước và độ chính xác mong muốn.
+
+        \begin{itemize}
+            \item Gia công bằng dao cắt sắc (Turning, Milling, Drilling)
+            \item Gia công bằng hạt mài (Grinding)
+            \item Gia công phi truyền thống (EDM, Laser, Waterjet, ...)
+        \end{itemize}
+
+        Đặc trưng của gia công cắt gọt là quá trình \textbf{biến dạng cắt (shear deformation)} tạo phoi và bề mặt mới.
+
+    \section{Ưu nhược điểm của gia công cắt gọt}
+        \hspace*{0.6cm}\textbf{Ưu điểm:}
+        \begin{itemize}
+            \item Gia công được nhiều loại vật liệu, đặc biệt là kim loại
+            \item Tạo hình chi tiết phức tạp: ren, lỗ chính xác, bề mặt phẳng
+            \item Độ chính xác kích thước và độ nhẵn bề mặt cao
+        \end{itemize}
+
+        \textbf{Nhược điểm:}
+        \begin{itemize}
+            \item Lãng phí vật liệu do tạo phoi
+            \item Thời gian gia công dài so với các quá trình tạo hình khác
+        \end{itemize}
+
+        Gia công cắt gọt thường là \textbf{công đoạn cuối} sau đúc, rèn, cán.
+
+    \section{Các nguyên công gia công chủ yếu}
+        \subsection{Gia công truyền thống (Conventional Machining)}
+        \hspace*{0.6cm}Đặc trưng bởi việc sử dụng \textbf{dao cắt sắc} để loại bỏ vật liệu dưới dạng phoi.
+
+        \begin{itemize}
+            \item Tiện và các nguyên công liên quan (Turning and related operations)
+            \item Khoan và các nguyên công liên quan (Drilling and related operations)
+            \item Phay (Milling)
+            \item Các nguyên công gia công khác (Other machining operations)
+        \end{itemize}
+
+        \subsection{Gia công bằng hạt mài (Abrasive Processes)}
+        \hspace*{0.6cm}Vật liệu được loại bỏ nhờ \textbf{các hạt mài cứng} có kích thước nhỏ.
+
+        \begin{itemize}
+            \item Mài (Grinding operations)
+            \item Các quá trình gia công mài khác (Other abrasive processes)
+        \end{itemize}
+
+        \subsection{Gia công phi truyền thống (Nontraditional Machining)}
+        \hspace*{0.6cm}Không sử dụng dao cắt truyền thống, vật liệu được loại bỏ bằng các dạng năng lượng khác.
+
+        \begin{itemize}
+            \item Gia công bằng năng lượng cơ học (Mechanical energy processes)
+            \item Gia công điện hóa (Electrochemical machining)
+            \item Gia công bằng năng lượng nhiệt (Thermal energy processes)
+            \item Gia công hóa học (Chemical machining)
+        \end{itemize}
+
+
+        \subsection{Dụng cụ cắt}
+        \begin{itemize}
+            \item \textbf{Dao một lưỡi cắt}: tiện
+            \item \textbf{Dao nhiều lưỡi cắt}: khoan, phay
+        \end{itemize}
+
+        Các bề mặt chính của dao: mặt trước (rake face), mặt sau (flank), mũi dao.
+
+        \subsection{Chế độ cắt}
+            Ba thông số cơ bản:
+            \begin{itemize}
+                \item Tốc độ cắt $v$
+                \item Lượng chạy dao $f$
+                \item Chiều sâu cắt $d$
+            \end{itemize}
+
+            Tốc độ bóc vật liệu:
+            \[
+            RMR = v f d
+            \]
+
+        \subsection{Cắt thô và cắt tinh}
+            \begin{itemize}
+                \item \textbf{Cắt thô}: bóc nhiều vật liệu, $f$ và $d$ lớn, $v$ nhỏ
+                \item \textbf{Cắt tinh}: hoàn thiện kích thước, $f$ và $d$ nhỏ, $v$ lớn
+            \end{itemize}
+
+    \section{Mô hình cắt trực giao}
+        Mô hình 2D dùng để phân tích cơ học cắt gọt.
+
+    \subsection{Tỷ số chiều dày phoi}
+    \[
+    r = \frac{t_o}{t_c} < 1
+        \]
+
+        \subsection{Góc mặt trượt}
+        \[
+        \tan \phi = \frac{r \cos \alpha}{1 - r \sin \alpha}
+        \]
+
+        \subsection{Biến dạng trượt}
+        \[
+        \gamma = \tan(\phi - \alpha) + \cot \phi
+        \]
+
+        \subsection{Các dạng phoi}
+        \begin{enumerate}
+            \item Phoi rời – vật liệu giòn, tốc độ thấp
+            \item Phoi liên tục – vật liệu dẻo, tốc độ cao
+            \item Phoi liên tục có lẹo dao (BUE)
+            \item Phoi răng cưa – vật liệu khó gia công, tốc độ cao
+        \end{enumerate}
+        \begin{figure}[h!]
+            \centering
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[height=4cm]{pictures/chapter4/c04_p01_DiscontinousChip.png}
+                \caption{Phoi rời}
+            \end{subfigure}
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[height=4cm]{pictures/chapter4/c04_p02_ContinousChip.png}
+                \caption{Phoi liên tục}
+            \end{subfigure}
+
+            \vspace{0.5cm}
+
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[height=4cm]{pictures/chapter4/c04_p03_ContinousBLEChip.png}
+                \caption{Phoi liên tục có lẹo dao}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[height=4cm]{pictures/chapter4/c04_p04_SerratedChip.png}
+                \caption{Phoi răng cưa}
+            \end{subfigure}
+
+            \caption{Các dạng phoi trong gia công cắt gọt kim loại}
+            \label{fig:chip_types}
+        \end{figure}
+
+        \section{Lực cắt trong gia công cắt gọt}
+
+            \subsection{Các lực tác dụng lên phoi}
+            \hspace*{0.6cm}Trong quá trình gia công cắt gọt, dao cắt tác dụng lực lên phoi thông qua hai vùng chính: vùng tiếp xúc dao--phoi và vùng trượt.
+
+            Các lực tác dụng lên phoi bao gồm:
+            \begin{itemize}
+                \item Lực ma sát $F$ và phản lực pháp tuyến $N$ tại mặt trước của dao
+                \item Lực trượt $F_s$ và phản lực pháp tuyến $F_n$ trên mặt trượt
+            \end{itemize}
+
+            \subsection{Hợp lực tác dụng lên phoi}
+            \hspace*{0.6cm}Các lực riêng lẻ có thể được tổng hợp thành các hợp lực:
+
+            \begin{itemize}
+                \item Hợp lực $R$ là tổng véc-tơ của lực ma sát $F$ và phản lực $N$
+                \item Hợp lực $R'$ là tổng véc-tơ của lực trượt $F_s$ và phản lực $F_n$
+            \end{itemize}
+
+            Do phoi ở trạng thái cân bằng lực:
+            \begin{itemize}
+                \item $R'$ có độ lớn bằng $R$
+                \item $R'$ ngược chiều với $R$
+                \item $R'$ cùng phương (thẳng hàng) với $R$
+            \end{itemize}
+
+            \subsection{Hệ số ma sát trong gia công}
+            \hspace*{0.6cm}Hệ số ma sát giữa dao và phoi được xác định bởi:
+            \[
+            \mu = \frac{F}{N}
+            \]
+
+            Góc ma sát $\beta$ liên hệ với hệ số ma sát:
+            \[
+            \mu = \tan \beta
+            \]
+
+            \subsection{Ứng suất trượt trên mặt trượt}
+            \hspace*{0.6cm}Ứng suất trượt tác dụng trên mặt trượt được xác định bởi:
+            \[
+            \tau = \frac{F_s}{A_s}
+            \]
+
+            trong đó diện tích mặt trượt:
+            \[
+            A_s = \frac{t_o w}{\sin \phi}
+            \]
+
+            Trong gia công cắt gọt, ứng suất trượt:
+            \[
+            \tau \approx S
+            \]
+            với $S$ là giới hạn bền trượt của vật liệu phôi trong điều kiện cắt.
+
+            \subsection{Lực cắt và lực đẩy}
+            \hspace*{0.6cm}Các lực $F$, $N$, $F_s$ và $F_n$ không thể đo trực tiếp trong thực tế.
+
+            Các lực có thể đo được trên dao cắt là:
+            \begin{itemize}
+                \item Lực cắt $F_c$
+                \item Lực đẩy (lực hướng tâm) $F_t$
+            \end{itemize}
+
+            \subsection{Quan hệ giữa các lực trong gia công cắt gọt}
+            Các lực không đo được được xác định thông qua các lực đo được theo các biểu thức:
+
+            \[
+            \begin{aligned}
+            F   &= F_c \sin \alpha + F_t \cos \alpha \\
+            N   &= F_c \cos \alpha - F_t \sin \alpha \\
+            F_s &= F_c \cos \phi - F_t \sin \phi \\
+            F_n &= F_c \sin \phi + F_t \cos \phi
+            \end{aligned}
+            \]
+
+            Dựa vào các lực này, có thể xác định ứng suất trượt và hệ số ma sát trong quá trình cắt.
+
+            \subsection{Phương trình Merchant}
+            Theo giả thuyết Merchant, trong các khả năng có thể xảy ra của mặt trượt, vật liệu sẽ chọn góc trượt sao cho năng lượng tiêu hao là nhỏ nhất.
+
+            Phương trình Merchant:
+            \[
+            \phi = 45^\circ + \frac{\alpha}{2} - \frac{\beta}{2}
+            \]
+
+            Phương trình được xây dựng cho mô hình cắt trực giao, nhưng có thể mở rộng áp dụng cho gia công ba chiều.
+
+            \subsection{Ý nghĩa của phương trình Merchant}
+            Từ phương trình Merchant có thể rút ra các kết luận quan trọng:
+
+            \begin{itemize}
+                \item Tăng góc trước của dao $\alpha$ làm tăng góc trượt $\phi$
+                \item Giảm góc ma sát $\beta$ (giảm hệ số ma sát) làm tăng $\phi$
+            \end{itemize}
+
+            \subsection{Ảnh hưởng của góc trượt lớn}
+            Góc trượt $\phi$ càng lớn thì:
+            \begin{itemize}
+                \item Diện tích mặt trượt càng nhỏ
+                \item Lực trượt và lực cắt giảm
+                \item Công suất cắt giảm
+                \item Nhiệt cắt giảm
+            \end{itemize}
+
+            Do đó, tăng góc trượt là mục tiêu quan trọng trong thiết kế dao và lựa chọn điều kiện cắt.
+
+
+    \section{Công suất và năng lượng trong gia công cắt gọt}
+
+        \subsection{Công suất cắt}
+        Gia công cắt gọt kim loại là một quá trình tiêu thụ năng lượng, do đó luôn yêu cầu công suất.
+
+        Công suất cắt được xác định theo biểu thức:
+        \[
+        P_c = F_c \, v
+        \]
+
+        trong đó:
+        \begin{itemize}
+            \item $P_c$ – công suất cắt
+            \item $F_c$ – lực cắt
+            \item $v$ – tốc độ cắt
+        \end{itemize}
+
+        Công thức cho thấy công suất cắt phụ thuộc trực tiếp vào lực cắt và tốc độ cắt.
+
+        \subsection{Công suất cắt theo hệ đơn vị Anh–Mỹ}
+        Trong hệ đơn vị Anh–Mỹ, công suất thường được biểu diễn dưới dạng mã lực (horsepower).
+
+        \[
+        HP_c = \frac{F_c \, v}{33{,}000}
+        \]
+
+        trong đó:
+        \begin{itemize}
+            \item $HP_c$ – công suất cắt (hp)
+            \item $33{,}000$ ft$\cdot$lb/min tương đương với 1 hp
+        \end{itemize}
+
+        \subsection{Công suất tổng của máy công cụ}
+        Do tồn tại tổn hao cơ khí, công suất máy cung cấp luôn lớn hơn công suất thực sự dùng để cắt.
+
+        Quan hệ giữa công suất cắt và công suất máy:
+        \[
+        P_g = \frac{P_c}{E}
+        \qquad \text{hoặc} \qquad
+        HP_g = \frac{HP_c}{E}
+        \]
+
+        trong đó:
+        \begin{itemize}
+            \item $P_g$, $HP_g$ – công suất tổng của máy
+            \item $E$ – hiệu suất cơ khí của máy công cụ
+        \end{itemize}
+
+        Giá trị hiệu suất cơ khí điển hình của máy công cụ:
+        \[
+        E \approx 90\%
+        \]
+
+        \subsection{Công suất riêng trong gia công}
+        Để đánh giá và so sánh các quá trình gia công, công suất thường được quy đổi theo đơn vị thể tích vật liệu bóc đi, gọi là công suất riêng.
+
+        \[
+        P_u = \frac{P_c}{R_{MR}}
+        \qquad \text{hoặc} \qquad
+        HP_u = \frac{HP_c}{R_{MR}}
+        \]
+
+        trong đó:
+        \begin{itemize}
+            \item $P_u$, $HP_u$ – công suất riêng
+            \item $R_{MR}$ – tốc độ bóc vật liệu (Material Removal Rate)
+        \end{itemize}
+
+        \subsection{Năng lượng riêng trong gia công}
+        Công suất riêng còn được gọi là năng lượng riêng của quá trình gia công.
+
+        \[
+        U = P_u = \frac{P_c}{R_{MR}} = \frac{F_c \, v}{v t_o w}
+        \]
+
+        trong đó:
+        \begin{itemize}
+            \item $U$ – năng lượng riêng
+            \item $t_o$ – chiều dày lớp cắt trước gia công
+            \item $w$ – chiều rộng cắt
+        \end{itemize}
+
+        Đơn vị thường dùng của năng lượng riêng:
+        \[
+        \text{J/mm}^3 \quad \text{hoặc} \quad \text{N·m/mm}^3
+        \]
+
+        Năng lượng riêng biểu thị lượng năng lượng cần thiết để bóc một đơn vị thể tích vật liệu.
+
+        \subsection{Nhiệt cắt}
+        Khoảng \textbf{98\% năng lượng} biến thành nhiệt tại vùng dao–phoi.
+
+        \textbf{Hệ quả:}
+        \begin{itemize}
+            \item Giảm tuổi bền dao
+            \item Phoi nóng gây nguy hiểm
+            \item Sai lệch kích thước do giãn nở nhiệt
+        \end{itemize}
+
+        \subsubsection{Công thức Cook}
+        \[
+        T = 0.4 \frac{U}{\rho C}
+        \left( \frac{v t_o}{K} \right)^{0.333}
+        \]
+
+        \subsubsection{Quan hệ thực nghiệm}
+        \[
+        T = K v^m
+        \]
