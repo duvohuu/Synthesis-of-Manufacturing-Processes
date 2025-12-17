@@ -784,6 +784,66 @@
             \item \textbf{Ống rót (Sprue):}  
             Dẫn kim loại lỏng từ cốc rót xuống hệ thống kênh dẫn.
 
+    \subsubsection*{Độ cứng vững của hệ thống}
+    Nếu máy công cụ hoặc đồ gá không đủ cứng vững, hiện tượng rung động và chattering sẽ xảy ra, dẫn đến mẻ dao (chipping) hoặc gãy dao đột ngột.
+        
+
+    \section{Các phương pháp gia công tiên tiến (Advanced Machining Processes) giúp giải quyết các vấn đề gì?}
+        \subsection{Giải quyết vấn đề về vật liệu: độ cứng và độ bền}
+            \hspace*{0.6cm}Hạn chế lớn nhất của gia công truyền thống là nguyên tắc "độ cứng tương đối": dụng cụ cắt phải cứng hơn phôi. Khi vật liệu phôi có độ cứng vượt quá 40-50 HRC (như thép đã tôi, cacbit vonfram) hoặc có độ bền nhiệt cao (như siêu hợp kim nền Niken/Titan), dao cắt truyền thống bị mòn rất nhanh, gãy vỡ, hoặc không thể cắt được
+            \subsubsection{Gia công Vật liệu Siêu cứng và Giòn (Ceramics, Thủy tinh, Carbide)}
+                \begin{itemize}
+                    \item Gia công Siêu âm (Ultrasonic Machining - USM): Dụng cụ dao động với tần số cao (khoảng 20 kHz) và biên độ nhỏ truyền động năng cho các hạt mài trong dung dịch huyền phù (slurry). Các hạt mài này va đập vào bề mặt phôi, gây ra các vết nứt vi mô và tách vật liệu ra dưới dạng bột mịn.
+                    \item Gia công Tia hạt mài (Abrasive Jet Machining - AJM): Đối với các tấm vật liệu mỏng và giòn như mica, thủy tinh, silicon, lực kẹp và lực cắt của máy phay có thể làm gãy chi tiết ngay lập tức. AJM (Mục 7.4.4 ) giải quyết bằng cách sử dụng luồng khí chứa hạt mài tốc độ cao.
+                \end{itemize}
+            \subsubsection{Gia công Vật liệu Dẫn điện Siêu bền (Hợp kim Titan, Thép đã tôi)}
+                \begin{itemize}
+                    \item Gia công Tia lửa điện (Electrical Discharge Machining - EDM):  Vì vật liệu bị bóc tách bởi năng lượng nhiệt của tia lửa điện (nóng chảy và bay hơi) nên không phải quan tâm đến độ cứng vật lý của phôi. Điều đó dẫn đến cách mạng trong công nghiệp sản xuất, khi người ta có thể tôi cứng khối thép trước, sau đó dùng EDM để gia công hốc khuôn với độ chính xác tuyệt đối thay vì phải cắt gọt rồi mới tôi cứng như trước.
+                    \item Gia công Điện hóa (Electrochemical Machining - ECM): ECM hòa tan vật liệu theo cơ chế điện phân từng nguyên tử một. Quá trình này không sinh nhiệt, không gây áp lực cơ học. Do đó có thể gia công các vật liệu siêu bền mà không để lại ứng suất dư hay làm biến đổi cấu trúc luyện kim.
+                \end{itemize}
+            \subsubsection{Gia công Vật liệu Mềm, Dẻo và Nhạy cảm Nhiệt}
+                \begin{itemize}
+                    \item Cắt bằng Tia nước (Water Jet Cutting - WJC): sử dụng dòng nước áp suất siêu cao để cắt xuyên qua vật liệu. Phương pháp sử dụng không sinh nhiệt, lực cắt điểm nhỏ, không làm cháy mép cạnh, biến tính vật liệu, hay biến dạng cơ học. 
+                \end{itemize}  
+
+        \subsection{Giải quyết vấn đề về hình học trong gia công}
+            \hspace*{0.6cm}Sự phức tạp của hình học là một trong những rào cản lớn trong gia công theo các phương pháp truyền thống, kể cả với những máy CNC 5 trục hiện đại ngày nay, vẫn tồn tại hạn chế tự dụng cụ cắt và bán kính dao, các phương pháp gia công không truyền thống đưa ra được những giải pháp phù hợp giải quyết các vấn đề này, cụ thể
+            \subsubsection{Gia công các hốc sâu và góc nhọn}
+                \hspace*{0.6cm}Giải pháp EDM xung định hình, điện cực EDM có thể được gia công với các cạnh sắc nhọn. Khi điện cực đi sâu vào phôi, nó xói mòn vật liệu tạo thành hốc có hình dạng âm bản chính xác của điện cực.
+            \subsubsection{Cắt khe hẹp và chi tiết mảnh}
+            \hspace*{0.6cm}Ví dụ như các lá tản nhiệt, khe hở trong linh kiện điện tử, ...
+            \newline    
+            \hspace*{0.6cm}Giải pháp Wire-EDM (Cắt dây): Sử dụng một dây dẫn điện mảnh (thường bằng đồng hoặc molypden, đường kính từ 0.02 - 0.3 mm) làm điện cực cắt. Quá trình phóng điện tạo ra rãnh cắt (kerf) chỉ rộng hơn đường kính dây một chút (do khe hở phóng điện - gap). Độ chính xác của phương pháp cắt dây có thể đạt tới micromet.
+            \subsubsection{Gia công nhiều lỗ đồng thời}
+                \hspace*{0.6cm}Giải pháp ECM: ECM cho phép gia công hàng loạt lỗ đồng thời (gang drilling) bằng cách sử dụng một điện cực chùm.
+        
+        \subsection{Giải quyết vấn đề về bảo toàn bề mặt gia công và chất lượng gia công}
+            \subsubsection{Loại bỏ ứng suất dư và biến dạng cơ học}
+                \begin{itemize}
+                    \item ECM: do cơ chế hòa tan nguyên tử không tiếp xúc, ECM không gây ra bất kỳ ứng suất cơ học nào lên bề mặt. Điều này cần thiết cho sản xuất các chi tiết chịu tải trọng lớn.
+                    \item WJC: Cắt lạnh bằng nước không làm thay đổi cấu trúc vật liệu và không gây ứng suất nhiệt, giải quyết vấn đề cong vênh của các tấm kim loại mỏng sau khi cắt.
+                \end{itemize}
+            \subsubsection{Khử Bavia (Deburring)}
+                \begin{itemize}
+                    \item Giải pháp ECD (Electrochemical Deburring): Điện cực được đưa vào gần vị trí có bavia. Do mật độ dòng điện tập trung cao nhất tại các đỉnh nhọn (hiệu ứng mũi nhọn), bavia bị hòa tan cực nhanh trong khi kích thước lỗ cơ bản không bị ảnh hưởng.
+                    \item Giải pháp AJM: Dùng để tẩy bavia cho các chi tiết nhỏ, tinh vi, hoặc làm sạch khuôn mà không làm mòn bề mặt khuôn quá mức.
+                \end{itemize}
+            \subsubsection{Bảo toàn Cấu trúc Luyện kim (Metallurgical Integrity)}
+                \hspace*{0.6cm}Giải pháp ECG (Mài điện hóa): ECG là sự kết hợp giữa mài và điện hóa. Trong đó, 95\% vật liệu được bóc tách bằng điện hóa, chỉ 5\% bằng hạt mài cơ học. Điều này giúp giảm đáng kể nhiệt sinh ra, giải quyết vấn đề nứt tế vi (micro-cracks) và biến cứng bề mặt thường gặp khi mài các vật liệu cacbit hay thép gió. 
+        \subsection{Giải quyết bài toán kinh tế và hiệu quả sản xuất}
+                \subsubsection{Tối ưu chỉ phí dụng cụ cắt}
+                    \begin{itemize}
+                        \item Vấn đề mòn dao: Khi gia công vật liệu siêu cứng, dao mòn nhanh làm thay đổi kích thước chi tiết liên tục, đòi hỏi phải bù dao hoặc thay dao thường xuyên.
+                        \item Giải pháp ECM: Trong ECM, dụng cụ (catốt) không bị tiêu hao trong quá trình điện phân dụng cụ có thể gia công hàng ngàn chi tiết với độ chính xác không đổi. Điều này giải quyết bài toán kinh tế cho sản xuất hàng loạt các chi tiết phức tạp
+                        \item Giải pháp Wire-EDM: Dây cắt trong Wire-EDM được cấp liên tục từ cuộn dây mới. Do đó, "lưỡi cắt" luôn luôn mới và có kích thước chuẩn
+                    \end{itemize}
+                \subsubsection{Giảm thiểu quy trình}
+                    \begin{itemize}
+                        \item Tích hợp: Một máy Wire-EDM có thể thay thế cho cả phay, bào, và mài trong việc chế tạo chày cối, thực hiện xong chỉ trong một lần gá đặt (one setup).
+                    \end{itemize}
+                \subsubsection{Tự động hóa và linh hoạt}
+                    \hspace*{0.6cm}Khả năng kết hợp được với CNC, giúp các phương pháp hoạt động chính xác và hiệu quả với các chương trình được lập trình sẵn, điều này giúp loại bỏ yếu tố sai số từ tay nghề thợ, giảm chi phí nhân công và đảm bảo tính lặp lại trong quy trình sản xuất.
+                    
             \item \textbf{Đường dẫn (Runner):}  
             Phân phối kim loại lỏng từ ống rót
             đến các cửa vào khuôn.
