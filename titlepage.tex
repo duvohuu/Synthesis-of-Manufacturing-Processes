@@ -1,44 +1,43 @@
-\begin{titlepage}   
-    \begin{center}
-        \vspace*{-2cm} 
-        \large
-        \textbf{ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH \\
-        TRƯỜNG ĐẠI HỌC BÁCH KHOA\\
-        KHOA CƠ KHÍ \\}
-        \vspace{0.5cm}
-        \includegraphics[width=70mm, height=70mm]{pictures/hcmut.png} \\
-        \rule{\linewidth}{0.5mm}\\
-        \vspace{1cm}
-        \LARGE
-        \textbf{ÔN TẬP}\\                                                                                                                                                                                                                    
-        \vspace*{0.5cm}
-        \textbf{CÁC QUÁ TRÌNH CHẾ TẠO}\\                                                                                                                                                                                                                                                                                                                                                                                                                                             
-        \vspace{0.5cm}
-        \rule{\linewidth}{0.5mm}\\
-        \vspace{0.6cm}
-        \large
-        \textbf{LỚP TN01 - HK 251} \\
-        \vspace{0.8cm}
-        \textbf{GV: TS. Trần Hải Nam} \\[0.5cm]
-        \vspace{0.5cm}
-        NGƯỜI BIÊN SOẠN:\\[0.3cm]
-        \begin{tabular}{|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{7cm}|>{\centering\arraybackslash}m{5cm}|}
-            \hline
-            \textbf{STT} & \textbf{Họ và tên} & \textbf{MSSV} \\
-            \hline
-            1 & Võ Hữu Dư & 2210604 \\
-            \hline
-            2 & Dương Quang Duy& 2210606 \\
-            \hline
-            3 & Đào Trọng Chân & 2210350 \\
-            \hline
-        \end{tabular}
-    \end{center}
+\begin{titlepage}
+    \pagecolor{blue!20!black}
+    \color{white}
+    
+    \begin{tikzpicture}[remember picture,overlay]
+        % Header với nền xanh đậm
+        \fill[blue!30!black] (current page.north west) rectangle ([yshift=-6.5cm]current page.north east);
         
-    \vfill
-    \large
-    \begin{center}
-        TP.HCM, \today
-    \end{center}
+        % Tiêu đề chính được đặt bằng TikZ
+        \node[anchor=north, align=center] at ([yshift=-1.8cm]current page.north) {
+            {\fontsize{35}{40}\selectfont\bfseries CÁC QUÁ TRÌNH CHẾ TẠO}\\[0.2cm]
+            \color{white}\rule{0.85\textwidth}{1pt} \\[0.5cm]
+            {\fontsize{20}{25}\selectfont Manufacturing Engineering and Technology}
+        };
+        
+        % Ảnh cover tràn sát lên phần header
+        \node[anchor=north] at ([yshift=-6.5cm]current page.north) {
+            \includegraphics[width=\paperwidth,keepaspectratio]{pictures/cover-image.png}
+        };
+        
+        % Thông tin tác giả
+        \node[anchor=south west, text width=0.5\textwidth] at ([xshift=2cm,yshift=3cm]current page.south west) {
+            \Large\bfseries First Edition
+        };
+        
+        \node[anchor=south east, text width=0.45\textwidth, align=right] at ([xshift=-2cm,yshift=2.5cm]current page.south east) {
+            {\large\bfseries Võ Hữu Dư}\\[0.2cm]
+            {\large\bfseries Dương Quang Duy}\\[0.2cm]
+            {\large\bfseries Đào Trọng Chân}
+        };
+        
+        % Footer với nền xanh lá
+        \fill[green!60!black] (current page.south west) rectangle ([yshift=1.5cm]current page.south east);
+        
+        \node[anchor=south, align=center] at ([yshift=0.3cm]current page.south) {
+            {\large\bfseries ĐH BÁCH KHOA TP.HCM - KHOA CƠ KHÍ}
+        };
+        
+    \end{tikzpicture}
+    
 \end{titlepage}
 
+\nopagecolor
